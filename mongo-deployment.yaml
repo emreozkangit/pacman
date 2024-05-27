@@ -15,7 +15,7 @@ spec:
         name: mongo
     spec:
       containers:
-      - image: bitnami/mongodb:7.0.9-debian-12-r4
+      - image: bitnami/mongodb:7.0
         name: mongo
         ports:
         - name: mongo
