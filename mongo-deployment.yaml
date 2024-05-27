@@ -15,14 +15,14 @@ spec:
         name: mongo
     spec:
       containers:
-      - image: quay.io/powercloud/mongodb:latest
+      - image: bitnami/mongodb
         name: mongo
         ports:
         - name: mongo
           containerPort: 27017
         volumeMounts:
           - name: mongo-db
-            mountPath: /data/db
+            mountPath: /bitnami/mongodb
       volumes:
         - name: mongo-db
           persistentVolumeClaim:
